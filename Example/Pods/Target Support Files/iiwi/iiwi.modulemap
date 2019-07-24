@@ -1,0 +1,6 @@
+framework module iiwi {
+  umbrella header "iiwi-umbrella.h"
+
+  export *
+  module * { export * }
+}
