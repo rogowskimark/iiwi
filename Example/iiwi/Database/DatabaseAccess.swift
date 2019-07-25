@@ -9,19 +9,17 @@
 import CoreData
 import iiwi
 
-public class DatabaseAccess {
+public class DatabaseAccess: iiwiAccess {
     let bookshelfs: BookshelfRepository
     let authors: AuthorRepository
     let books: BookRepository
     
-    private let context: NSManagedObjectContext
-    
-    init(withContext context: NSManagedObjectContext) {
-        self.context = context
-        
+    override init(withContext context: NSManagedObjectContext) {
         self.bookshelfs = BookshelfRepository(context: context)
         self.authors = AuthorRepository(context: context)
         self.books = BookRepository(context: context)
+        
+        super.init(withContext: context)
     }
     
     public static let view: DatabaseAccess = {
@@ -32,19 +30,4 @@ public class DatabaseAccess {
         return DatabaseAccess(withContext: iiwi.newBackgroundContext())
     }
     
-    public func save() throws {
-        try context.save()
-    }
-    
-    public func performBlock(_ block: @escaping (() -> Void)) {
-        context.perform(block)
-    }
-    
-    public func performAndWait(_ block: @escaping (() -> Void)) {
-        context.performAndWait(block)
-    }
-    
-    public func deleteAll() {
-        try? save()
-    }
 }

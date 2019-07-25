@@ -61,6 +61,7 @@
 		7A19676222E9A7CC005EE80B /* Deletor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676122E9A7CC005EE80B /* Deletor.swift */; };
 		7A19676422E9A80D005EE80B /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676322E9A80D005EE80B /* Query.swift */; };
 		7A19678522E9BBD2005EE80B /* NoPrimaryKeyQuerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19678422E9BBD2005EE80B /* NoPrimaryKeyQuerable.swift */; };
+		7A19678922E9C6B2005EE80B /* iiwiAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19678822E9C6B2005EE80B /* iiwiAccess.swift */; };
 		7AD6995322E86E6700A597F5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6995222E86E6700A597F5 /* Stack.swift */; };
 		7AD699DA22E8A4F400A597F5 /* iiwi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD699D922E8A4F400A597F5 /* iiwi.swift */; };
 		7BB6491AF900FAC4353B3DB6649DC259 /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD3A237CAA6577DE13CEF756F0AC29 /* SatisfyAllOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -241,6 +242,7 @@
 		7A19676122E9A7CC005EE80B /* Deletor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deletor.swift; sourceTree = "<group>"; };
 		7A19676322E9A80D005EE80B /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		7A19678422E9BBD2005EE80B /* NoPrimaryKeyQuerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPrimaryKeyQuerable.swift; sourceTree = "<group>"; };
+		7A19678822E9C6B2005EE80B /* iiwiAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iiwiAccess.swift; sourceTree = "<group>"; };
 		7AD6995222E86E6700A597F5 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = iiwi/Classes/Stack.swift; sourceTree = "<group>"; };
 		7AD699D922E8A4F400A597F5 /* iiwi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = iiwi.swift; path = iiwi/Classes/iiwi.swift; sourceTree = "<group>"; };
 		7C0C8040127E611A8539A8592BF5B92D /* CwlDarwinDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlDarwinDefinitions.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlDarwinDefinitions.swift; sourceTree = "<group>"; };
@@ -559,6 +561,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD699D922E8A4F400A597F5 /* iiwi.swift */,
+				7A19678822E9C6B2005EE80B /* iiwiAccess.swift */,
 				7AD6995222E86E6700A597F5 /* Stack.swift */,
 				7A19675A22E9A747005EE80B /* Repository */,
 				60BA2150942A1558392E991C026BFC54 /* Pod */,
@@ -909,6 +912,7 @@
 				7AD6995322E86E6700A597F5 /* Stack.swift in Sources */,
 				7A19676222E9A7CC005EE80B /* Deletor.swift in Sources */,
 				95B52C342426A97CFC315763B14B9EB5 /* iiwi-dummy.m in Sources */,
+				7A19678922E9C6B2005EE80B /* iiwiAccess.swift in Sources */,
 				7A19676022E9A7A1005EE80B /* Creator.swift in Sources */,
 				7A19676422E9A80D005EE80B /* Query.swift in Sources */,
 				7A19678522E9BBD2005EE80B /* NoPrimaryKeyQuerable.swift in Sources */,
