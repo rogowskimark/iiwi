@@ -10,10 +10,23 @@
 		07DC5689477DBC78F7473359 /* Pods_iiwi_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027BFC58A85940BE52290180 /* Pods_iiwi_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7A19676622E9A8FC005EE80B /* DatabaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676522E9A8FC005EE80B /* DatabaseAccess.swift */; };
+		7A19676F22E9B1E1005EE80B /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676922E9B1E1005EE80B /* Book+CoreDataClass.swift */; };
+		7A19677022E9B1E1005EE80B /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676A22E9B1E1005EE80B /* Book+CoreDataProperties.swift */; };
+		7A19677122E9B1E1005EE80B /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676B22E9B1E1005EE80B /* Author+CoreDataClass.swift */; };
+		7A19677222E9B1E1005EE80B /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676C22E9B1E1005EE80B /* Author+CoreDataProperties.swift */; };
+		7A19677322E9B1E1005EE80B /* Bookshelf+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676D22E9B1E1005EE80B /* Bookshelf+CoreDataClass.swift */; };
+		7A19677422E9B1E1005EE80B /* Bookshelf+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19676E22E9B1E1005EE80B /* Bookshelf+CoreDataProperties.swift */; };
+		7A19677822E9B24F005EE80B /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19677722E9B24F005EE80B /* BookRepository.swift */; };
+		7A19677A22E9B25D005EE80B /* AuthorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19677922E9B25D005EE80B /* AuthorRepository.swift */; };
+		7A19677C22E9B26A005EE80B /* BookshelfRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19677B22E9B26A005EE80B /* BookshelfRepository.swift */; };
+		7A19677F22E9B3ED005EE80B /* IdInt64Querable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19677E22E9B3ED005EE80B /* IdInt64Querable.swift */; };
+		7A19678122E9B565005EE80B /* IdUUIDQuerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19678022E9B565005EE80B /* IdUUIDQuerable.swift */; };
+		7A19678322E9B5DA005EE80B /* ISBNQuerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19678222E9B5DA005EE80B /* ISBNQuerable.swift */; };
+		7AD6995622E8723200A597F5 /* iiwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6995422E8723200A597F5 /* iiwi.xcdatamodeld */; };
+		7AD6995822E878F200A597F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6995722E878F200A597F5 /* LaunchScreen.storyboard */; };
+		7AD6995A22E8806800A597F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6995922E8806800A597F5 /* Main.storyboard */; };
 		A677560D5FD4CD022D596AA9 /* Pods_iiwi_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD5ADDAC14A520347F4C85A /* Pods_iiwi_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +40,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7AD699D822E8916D00A597F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		027BFC58A85940BE52290180 /* Pods_iiwi_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iiwi_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		096D23BBEBAB257DC98D367D /* Pods-iiwi_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iiwi_Example.debug.xcconfig"; path = "Target Support Files/Pods-iiwi_Example/Pods-iiwi_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,14 +62,27 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* iiwi_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iiwi_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6E78F54D41E0AB7FA74C1ADE /* iiwi.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iiwi.podspec; path = ../iiwi.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		76C457AD86202685807EFEDC /* Pods-iiwi_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iiwi_Example.release.xcconfig"; path = "Target Support Files/Pods-iiwi_Example/Pods-iiwi_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7A19676522E9A8FC005EE80B /* DatabaseAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAccess.swift; sourceTree = "<group>"; };
+		7A19676922E9B1E1005EE80B /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A19676A22E9B1E1005EE80B /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A19676B22E9B1E1005EE80B /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A19676C22E9B1E1005EE80B /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A19676D22E9B1E1005EE80B /* Bookshelf+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookshelf+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A19676E22E9B1E1005EE80B /* Bookshelf+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookshelf+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A19677722E9B24F005EE80B /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		7A19677922E9B25D005EE80B /* AuthorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRepository.swift; sourceTree = "<group>"; };
+		7A19677B22E9B26A005EE80B /* BookshelfRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfRepository.swift; sourceTree = "<group>"; };
+		7A19677E22E9B3ED005EE80B /* IdInt64Querable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdInt64Querable.swift; sourceTree = "<group>"; };
+		7A19678022E9B565005EE80B /* IdUUIDQuerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdUUIDQuerable.swift; sourceTree = "<group>"; };
+		7A19678222E9B5DA005EE80B /* ISBNQuerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISBNQuerable.swift; sourceTree = "<group>"; };
+		7AD6995522E8723200A597F5 /* iiwi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iiwi.xcdatamodel; sourceTree = "<group>"; };
+		7AD6995722E878F200A597F5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AD6995922E8806800A597F5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9C7E5DBBECF36C76F3B21E29 /* Pods-iiwi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iiwi_Tests.release.xcconfig"; path = "Target Support Files/Pods-iiwi_Tests/Pods-iiwi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A3C38DD78E4484C8AA811B8A /* Pods-iiwi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iiwi_Tests.debug.xcconfig"; path = "Target Support Files/Pods-iiwi_Tests/Pods-iiwi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD5ADDAC14A520347F4C85A /* Pods_iiwi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iiwi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +134,10 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				7AD6995922E8806800A597F5 /* Main.storyboard */,
+				7A19677622E9B239005EE80B /* Database */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				7AD6995722E878F200A597F5 /* LaunchScreen.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for iiwi";
@@ -115,7 +155,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -137,6 +176,51 @@
 				1B4D635EBF84D392BB97963E /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7A19676822E9B1C5005EE80B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A19676922E9B1E1005EE80B /* Book+CoreDataClass.swift */,
+				7A19676A22E9B1E1005EE80B /* Book+CoreDataProperties.swift */,
+				7A19676B22E9B1E1005EE80B /* Author+CoreDataClass.swift */,
+				7A19676C22E9B1E1005EE80B /* Author+CoreDataProperties.swift */,
+				7A19676D22E9B1E1005EE80B /* Bookshelf+CoreDataClass.swift */,
+				7A19676E22E9B1E1005EE80B /* Bookshelf+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A19677522E9B228005EE80B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7A19677722E9B24F005EE80B /* BookRepository.swift */,
+				7A19677922E9B25D005EE80B /* AuthorRepository.swift */,
+				7A19677B22E9B26A005EE80B /* BookshelfRepository.swift */,
+				7A19677D22E9B3E5005EE80B /* Query */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7A19677622E9B239005EE80B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7A19676522E9A8FC005EE80B /* DatabaseAccess.swift */,
+				7AD6995422E8723200A597F5 /* iiwi.xcdatamodeld */,
+				7A19676822E9B1C5005EE80B /* Model */,
+				7A19677522E9B228005EE80B /* Repositories */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		7A19677D22E9B3E5005EE80B /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				7A19677E22E9B3ED005EE80B /* IdInt64Querable.swift */,
+				7A19678022E9B565005EE80B /* IdUUIDQuerable.swift */,
+				7A19678222E9B5DA005EE80B /* ISBNQuerable.swift */,
+			);
+			path = Query;
 			sourceTree = "<group>";
 		};
 		978ACB88CB064EE677C9769D /* Frameworks */ = {
@@ -171,6 +255,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				321D75C937FDEC0251D647C7 /* [CP] Embed Pods Frameworks */,
+				7AD699D822E8916D00A597F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +302,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = PC58NG392H;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -247,8 +333,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				7AD6995A22E8806800A597F5 /* Main.storyboard in Resources */,
+				7AD6995822E878F200A597F5 /* LaunchScreen.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,8 +446,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A19677222E9B1E1005EE80B /* Author+CoreDataProperties.swift in Sources */,
+				7A19676F22E9B1E1005EE80B /* Book+CoreDataClass.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				7A19677022E9B1E1005EE80B /* Book+CoreDataProperties.swift in Sources */,
+				7A19677A22E9B25D005EE80B /* AuthorRepository.swift in Sources */,
+				7A19677322E9B1E1005EE80B /* Bookshelf+CoreDataClass.swift in Sources */,
+				7A19677422E9B1E1005EE80B /* Bookshelf+CoreDataProperties.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				7A19677122E9B1E1005EE80B /* Author+CoreDataClass.swift in Sources */,
+				7A19676622E9A8FC005EE80B /* DatabaseAccess.swift in Sources */,
+				7A19678322E9B5DA005EE80B /* ISBNQuerable.swift in Sources */,
+				7A19678122E9B565005EE80B /* IdUUIDQuerable.swift in Sources */,
+				7A19677822E9B24F005EE80B /* BookRepository.swift in Sources */,
+				7AD6995622E8723200A597F5 /* iiwi.xcdatamodeld in Sources */,
+				7A19677C22E9B26A005EE80B /* BookshelfRepository.swift in Sources */,
+				7A19677F22E9B3ED005EE80B /* IdInt64Querable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +469,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,25 +481,6 @@
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -538,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3C38DD78E4484C8AA811B8A /* Pods-iiwi_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PC58NG392H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -547,6 +628,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,11 +642,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C7E5DBBECF36C76F3B21E29 /* Pods-iiwi_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PC58NG392H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -605,6 +689,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AD6995422E8723200A597F5 /* iiwi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AD6995522E8723200A597F5 /* iiwi.xcdatamodel */,
+			);
+			currentVersion = 7AD6995522E8723200A597F5 /* iiwi.xcdatamodel */;
+			path = iiwi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
