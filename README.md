@@ -65,13 +65,13 @@ When entity has primary key we could simply describe how to fetch entity based o
 
 ``` swift
 public protocol PrimaryKeyQuery {
-associatedtype EntityType: NSManagedObject
-associatedtype KeyIndexType
+    associatedtype EntityType: NSManagedObject
+    associatedtype KeyIndexType
 
-var key: String { get }
-var keyPredicateFormat: String { get }
-var query: Query<EntityType> { get }
-func entity(with: KeyIndexType) -> EntityType?
+    var key: String { get }
+    var keyPredicateFormat: String { get }
+    var query: Query<EntityType> { get }
+    func entity(with: KeyIndexType) -> EntityType?
 }
 ```
 
@@ -80,16 +80,16 @@ As example here is implementation how to query entities based on id (INT64).
 ```swift
 public class IdInt64Querable<T: NSManagedObject>: PrimaryKeyQuery {
 
-public typealias EntityType = T
-public typealias KeyIndexType = Int64
+    public typealias EntityType = T
+    public typealias KeyIndexType = Int64
 
-public let key = "id"
-public let keyPredicateFormat = "id = %i"
-public let query: Query<T>
+    public let key = "id"
+    public let keyPredicateFormat = "id = %i"
+    public let query: Query<T>
 
-init(context: NSManagedObjectContext) {
-self.query = Query<T>(context: context)
-}
+    init(context: NSManagedObjectContext) {
+        self.query = Query<T>(context: context)
+    }
 
 }
 ```
@@ -97,11 +97,11 @@ self.query = Query<T>(context: context)
 In order to avoid implementing `func  entity(with:  KeyIndexType)  ->  EntityType?` there is extension you could use.
 
 ```swift
-extension  PrimaryKeyQuery {
+extension PrimaryKeyQuery {
 
-public func entity(with key: KeyIndexType) -> EntityType? {
-return query.entities(with: NSPredicate(format: keyPredicateFormat, argumentArray: [key]), fetchLimit: 1, sortDescriptors: nil)?.first
-}
+    public func entity(with key: KeyIndexType) -> EntityType? {
+        return query.entities(with: NSPredicate(format: keyPredicateFormat, argumentArray: [key]), fetchLimit: 1, sortDescriptors: nil)?.first
+    }
 
 }
 ```
@@ -122,25 +122,25 @@ import CoreData
 import iiwi
 
 public class DatabaseAccess: iiwiAccess {
-let bookshelfs: BookshelfRepository
-let authors: AuthorRepository
-let books: BookRepository
+    let bookshelfs: BookshelfRepository
+    let authors: AuthorRepository
+    let books: BookRepository
 
-override init(withContext context: NSManagedObjectContext)     {
-self.bookshelfs = BookshelfRepository(context: context)
-self.authors = AuthorRepository(context: context)
-self.books = BookRepository(context: context)
+    override init(withContext context: NSManagedObjectContext)     {
+        self.bookshelfs = BookshelfRepository(context: context)
+        self.authors = AuthorRepository(context: context)
+        self.books = BookRepository(context: context)
 
-super.init(withContext: context)
-}
+        super.init(withContext: context)
+    }
 
-public static let view: DatabaseAccess = {
-return  DatabaseAccess(withContext: iiwi.viewContext)
-}()
+    public static let view: DatabaseAccess = {
+        return  DatabaseAccess(withContext: iiwi.viewContext)
+    }()
 
-static var newBackground: DatabaseAccess {
-return DatabaseAccess(withContext: iiwi.newBackgroundContext())
-}
+    static var newBackground: DatabaseAccess {
+        return DatabaseAccess(withContext: iiwi.newBackgroundContext())
+    }
 
 }
 ```
