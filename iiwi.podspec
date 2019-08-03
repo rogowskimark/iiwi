@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iiwi'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'iiwi simplifies usage of Core Data'
 
   s.description      = <<-DESC
