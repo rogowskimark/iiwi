@@ -26,7 +26,4 @@ open class iiwiAccess {
         context.performAndWait(block)
     }
     
-    public func deleteAll() {
-        try? save()
-    }
 }

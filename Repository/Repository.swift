@@ -7,8 +7,6 @@
 
 import CoreData
 
-//public typealias CoreDataEntity = NSManagedObject
-
 open class Repository<T: NSManagedObject, Q: PrimaryKeyQuery> {
     
     internal var context: NSManagedObjectContext
